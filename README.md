@@ -32,24 +32,6 @@ A high-fidelity interactive dashboard for analyzing Sustainable Development Goal
     streamlit run main.py
     ```
 
-## ☁️ Deployment Guide
-
-### Option 1: Deploy to Streamlit Community Cloud (Free)
-This is the easiest way to share your app.
-
-1.  **Push to GitHub**:
-    *   Create a new repository on [GitHub](https://github.com/).
-    *   Upload all files from this folder (`appSDG/`) to the repository.
-    *   Ensure `requirements.txt` is in the root of your repository.
-
-2.  **Deploy**:
-    *   Go to [share.streamlit.io](https://share.streamlit.io/).
-    *   Click **"New app"**.
-    *   Select your GitHub repository, branch (usually `main`), and the main file path (`main.py`).
-    *   Click **"Deploy"**.
-
-### Option 2: Deploy to Data Button / Hugging Face Spaces
-*   **Hugging Face**: Create a new Space, select "Streamlit" as the SDK, and upload your files (including `requirements.txt`).
 
 ## 📁 Project Structure
 ```text
