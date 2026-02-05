@@ -2,6 +2,10 @@
 
 A high-fidelity interactive dashboard for analyzing Sustainable Development Goals (SDG 2, 3, 6) across South and Southeast Asia, with a specific focus on India. Built with [Streamlit](https://streamlit.io/) and [Plotly](https://plotly.com/).
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://sdg-app-interactive-dashboard-sygs673mdaxne7qflxpvgc.streamlit.app/?embed_options=light_theme)
+
+**Live Dashboard:** [View the Interactive SDG Command Center](https://sdg-app-interactive-dashboard-sygs673mdaxne7qflxpvgc.streamlit.app/?embed_options=light_theme)
+
 ## 🚀 Features
 *   **Dynamic Theming**: UI colors adapt automatically based on the selected SDG (Yellow for SDG 2, Green for SDG 3, Blue for SDG 6).
 *   **Interactive Maps**: Dual-layer geospatial view with "Carto-Positron" tiles and a custom overlay for **India's full borders** (including J&K).
