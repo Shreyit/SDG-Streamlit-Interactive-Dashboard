@@ -120,10 +120,11 @@ def load_data():
         df_grid, df_pivot, on=["GeoAreaName", "TimePeriod"], how="left"
     )
 
-    df_interpolated = (
-        df_merged.groupby("GeoAreaName")
-        .apply(lambda x: x.interpolate(method="linear", limit_direction="both"))
-        .reset_index(drop=True)
+    indicator_cols = [c for c in df_merged.columns if c not in ["GeoAreaName", "TimePeriod"]]
+    df_interpolated = df_merged.copy()
+    df_interpolated[indicator_cols] = (
+        df_merged.groupby("GeoAreaName")[indicator_cols]
+        .transform(lambda x: x.interpolate(method="linear", limit_direction="both"))
     )
 
     df_final = df_interpolated.melt(
